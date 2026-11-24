@@ -9,7 +9,7 @@ Une note par appel significatif, avec un **sujet** (champ titre de la note dans 
 Exemples :
 - `Call qualif – Délégué OTC, ouvert, dispo 3 mois`
 - `Call client – 2 postes AQ ouverts, RDV fixé le 02/12`
-- `Tentative d'appel – messagerie`
+- `Message vocal envoyé`
 
 ## Corps — candidat
 
@@ -38,12 +38,16 @@ Objections / points clés : <…>
 Prochaine étape : <RDV, envoi de conditions, envoi de profils, relance le …>
 ```
 
-## Corps — messagerie / sans réponse
+## Corps — répondeur
+
+Sujet : `Message vocal envoyé`
 
 ```
-Tentative d'appel – messagerie <avec / sans message laissé>.
-Prochaine étape : <rappel prévu le …> (si connu)
+Appel le <date> à <heure> – répondeur, message vocal laissé.
+Mail de suivi préparé dans les brouillons Outlook (<adresse e-mail>).
 ```
+
+Sans e-mail sur la fiche : remplacer la 2e ligne par `Pas d'e-mail sur la fiche – pas de mail de suivi.`
 
 ## Exemple (anonymisé)
 
