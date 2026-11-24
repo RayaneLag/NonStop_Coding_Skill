@@ -10,7 +10,7 @@ Every evening, Claude:
 5. on a voicemail: note "Voice mail sent" and a follow-up email saved in the consultant's **Outlook drafts** (never sent);
 6. hands back a summary: records changed, drafts to send, points to check, follow-ups to plan.
 
-CRM notes and follow-up emails are written in French, because the CRM, the team and the candidates work in French.
+CRM notes and follow-up emails are written in French, because the CRM, the team and the candidates work in French. The voicemail note ("Voice mail sent") is in English.
 
 ## CRM access
 
