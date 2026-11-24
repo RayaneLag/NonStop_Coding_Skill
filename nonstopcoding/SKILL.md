@@ -1,6 +1,6 @@
 ---
 name: nonstopcoding
-description: Main trigger — as soon as the user types "start coding" (any casing, alone or inside a sentence), launch this skill immediately. Performs the end-of-day "coding" in the NonStop Consulting CRM for a recruiter. Reviews only the logged-in consultant's calls of the day, reads every transcript, understands the context, then recodes the candidate, client contact or client record (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment, etc.) according to the NonStop coding guide and leaves a structured call note; for a voicemail, leaves the note "Message vocal envoyé" and prepares a follow-up email in the Outlook drafts. Use this skill whenever the user talks about CRM coding, "coding my calls", updating records after calls, end-of-day work in the NonStop CRM, call notes to enter, or "Person coding needed" records, even if they do not name the skill.
+description: Main trigger — as soon as the user types "start coding" (any casing, alone or inside a sentence), launch this skill immediately. Performs the end-of-day "coding" in the NonStop Consulting CRM for a recruiter. Reviews only the logged-in consultant's calls of the day, reads every transcript, understands the context, then recodes the candidate, client contact or client record (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment, etc.) according to the NonStop coding guide and leaves a structured call note; for a voicemail, leaves the note "Voice mail sent" and prepares a follow-up email in the Outlook drafts. Use this skill whenever the user talks about CRM coding, "coding my calls", updating records after calls, end-of-day work in the NonStop CRM, call notes to enter, or "Person coding needed" records, even if they do not name the skill.
 ---
 
 # NonstopCoding — end-of-day coding in the NonStop CRM
@@ -55,7 +55,7 @@ Group several calls to the same person: one record update that takes all exchang
 3. **Classify the call:**
    - *Real conversation with a candidate* → full candidate coding.
    - *Conversation with a contact at a client/prospect* → client contact coding (+ update of the client record if the call brings something new: needs, BD status, Client status).
-   - *Voicemail* (a transcript that only contains a voicemail greeting and/or the consultant's message, or no transcript on a short call with nobody on the line) → no recoding, status unchanged (leave `Needs Call` if it was there). Note **"Message vocal envoyé"** then a **follow-up email draft** in Outlook: see step 5b.
+   - *Voicemail* (a transcript that only contains a voicemail greeting and/or the consultant's message, or no transcript on a short call with nobody on the line) → no recoding, status unchanged (leave `Needs Call` if it was there). Note **"Voice mail sent"** then a **follow-up email draft** in Outlook: see step 5b.
    - *Wrong number / off-target person* → note, and `Not Relevant / Dead` only if it is clearly final.
 
 ## Step 3 — Decide the coding
@@ -95,7 +95,7 @@ Add a **note with a subject** to the record, following [references/note-template
 
 For each call that went to voicemail:
 
-1. **Note on the record**, subject `Message vocal envoyé`, body: `Appel le <date> à <heure> – répondeur, message vocal laissé. Mail de suivi préparé.`
+1. **Note on the record**, subject `Voice mail sent`, body: `Appel le <date> à <heure> – répondeur, message vocal laissé. Mail de suivi préparé.`
 2. **Get the contact's email** from their CRM record (prefer the `personal` address for a candidate, `work` for a client contact). If there is no address, do not look elsewhere: write « pas d'e-mail sur la fiche » in the note and flag it in the summary.
 3. **Write the follow-up email** using [references/email-template.md](references/email-template.md), personalised with what the record and previous notes say (job, reason for the call). Sign in the name of the logged-in consultant.
 4. **Put it in the consultant's Outlook Drafts — without sending it.** The consultant reviews and sends it themselves. Outlook access: an Outlook / Microsoft 365 MCP tool if one exists (draft creation), otherwise Outlook Web in Chrome ("New email", fill To / Subject / Body, then close the window so Outlook saves it to Drafts, or use "Save draft"). Details in [references/crm-access.md](references/crm-access.md). Never click "Send".
@@ -111,7 +111,7 @@ As soon as every call is processed, immediately write a single summary in the Cl
 | Time | Record | Type | Status | Main changes |
 |---|---|---|---|---|
 | 09:42 | Firstname LASTNAME | Candidate | Live Active | Markets +Quality Assurance; Skills GMP, CAPA, LEAN; Employment TBD→Live |
-| 10:15 | Firstname LASTNAME | Candidate | Needs Call | Voicemail – note "Message vocal envoyé"; Outlook draft ready |
+| 10:15 | Firstname LASTNAME | Candidate | Needs Call | Voicemail – note "Voice mail sent"; Outlook draft ready |
 
 ### Outlook drafts to review and send
 - Firstname LASTNAME — address@… — email subject

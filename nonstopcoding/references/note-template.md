@@ -11,7 +11,7 @@ The French labels below must be used as they are.
 Examples:
 - `Call qualif – Délégué OTC, ouvert, dispo 3 mois`
 - `Call client – 2 postes AQ ouverts, RDV fixé le 02/12`
-- `Message vocal envoyé`
+- `Voice mail sent`
 
 ## Body — candidate
 
@@ -46,7 +46,7 @@ Label meanings: Interlocuteur = contact person; Besoins = needs; Situation recru
 
 ## Body — voicemail
 
-Subject: `Message vocal envoyé`
+Subject: `Voice mail sent`
 
 ```
 Appel le <date> à <heure> – répondeur, message vocal laissé.

@@ -7,7 +7,7 @@ Every evening, Claude:
 2. reads each transcript and understands the context of the call;
 3. recodes the candidate, client contact or client record according to the NonStop coding guide (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment…);
 4. leaves a structured call note on the record;
-5. on a voicemail: note "Message vocal envoyé" and a follow-up email saved in the consultant's **Outlook drafts** (never sent);
+5. on a voicemail: note "Voice mail sent" and a follow-up email saved in the consultant's **Outlook drafts** (never sent);
 6. hands back a summary: records changed, drafts to send, points to check, follow-ups to plan.
 
 CRM notes and follow-up emails are written in French, because the CRM, the team and the candidates work in French.
