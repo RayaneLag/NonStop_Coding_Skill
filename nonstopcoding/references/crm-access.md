@@ -38,6 +38,7 @@ Two modes. Use the MCP if it is available, otherwise Claude in Chrome.
 **Option 2 — Outlook Web in Chrome.**
 1. Open a new tab on Outlook Web (`outlook.office.com/mail` for a work account, unless the recruiter already has an Outlook tab open: then reuse its URL).
 2. Click "New email". Fill in **To** (the email from the record), **Subject**, then the **body**.
+   - **To field:** after typing the address, wait for the "Use this address: …" suggestion and press **Enter**. The address must turn into a recipient chip (with an ×). Typed text that is not turned into a chip is **not saved**: the draft ends up with an empty To. Pressing Tab is not enough.
 3. Save as a draft: "…" menu → "Save draft", or close/cancel the compose window choosing to **keep** the draft. Outlook Web also saves automatically after a few seconds.
 4. Open the **Drafts** folder and check that the email is there with the right recipient.
 5. **Never** click "Send". If a dialog offers to send, close it.

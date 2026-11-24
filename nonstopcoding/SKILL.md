@@ -99,7 +99,7 @@ For each call that went to voicemail:
 2. **Get the contact's email** from their CRM record (prefer the `personal` address for a candidate, `work` for a client contact). If there is no address, do not look elsewhere: write `No email on the record – no follow-up email.` in the note and flag it in the summary.
 3. **Write the follow-up email** using [references/email-template.md](references/email-template.md), personalised with what the record and previous notes say (job, reason for the call). Sign in the name of the logged-in consultant.
 4. **Put it in the consultant's Outlook Drafts — without sending it.** The consultant reviews and sends it themselves. Outlook access: an Outlook / Microsoft 365 MCP tool if one exists (draft creation), otherwise Outlook Web in Chrome ("New email", fill To / Subject / Body, then close the window so Outlook saves it to Drafts, or use "Save draft"). Details in [references/crm-access.md](references/crm-access.md). Never click "Send".
-5. Check that the draft appears in the Drafts folder with the right recipient.
+5. Check that the draft appears in the Drafts folder with the right recipient: the draft list must show the email address, not just "[Draft]". In Outlook Web, the typed address only counts once it has been validated with Enter and turned into a recipient chip (see [references/crm-access.md](references/crm-access.md)).
 
 ## Step 6 — Final summary
 
