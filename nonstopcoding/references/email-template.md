@@ -1,13 +1,13 @@
-# Modèle de mail de suivi après répondeur
+# Follow-up email template after a voicemail
 
-Le mail est **déposé en brouillon** dans Outlook, jamais envoyé. Il doit sembler écrit à la main par le consultant : court, poli, personnalisé avec une ou deux infos de la fiche (poste actuel, raison de l'appel). Vouvoiement par défaut. Pas de pièce jointe.
+The email is **saved as a draft** in Outlook, never sent. It must read as if the consultant wrote it by hand: short, polite, personalised with one or two facts from the record (current job, reason for the call). Formal « vous » by default. No attachment.
 
-Remplace les `<…>` par les vraies infos. Si une info manque, reformule la phrase sans elle plutôt que d'inventer.
+The email is **written in French** (candidates and clients are French-speaking): use the templates below as they are, replacing the `<…>` with the real information. If a piece of information is missing, rephrase the sentence without it rather than inventing anything.
 
-## Candidat
+## Candidate
 
-**Objet :** `Suite à mon appel – <opportunité / poste> | NonStop Consulting`
-(si le poste n'est pas connu : `Suite à mon appel – NonStop Consulting`)
+**Subject:** `Suite à mon appel – <opportunité / poste> | NonStop Consulting`
+(if the job is not known: `Suite à mon appel – NonStop Consulting`)
 
 ```
 Bonjour <Prénom>,
@@ -24,11 +24,11 @@ Bien cordialement,
 NonStop Consulting
 ```
 
-Si le candidat est déjà en process avec le consultant (notes précédentes), adapte : « Je reviens vers vous concernant <le process / l'entretien avec …> ».
+If the candidate is already in a process with the consultant (previous notes), adapt: « Je reviens vers vous concernant <le process / l'entretien avec …> ».
 
-## Contact client / prospect
+## Client contact / prospect
 
-**Objet :** `Suite à mon appel – NonStop Consulting`
+**Subject:** `Suite à mon appel – NonStop Consulting`
 
 ```
 Bonjour <Madame / Monsieur NOM>,
@@ -47,4 +47,4 @@ NonStop Consulting
 
 ## Signature
 
-Si Outlook ajoute automatiquement la signature du consultant, ne la double pas : retire le bloc de signature du modèle et garde seulement « Bien cordialement, ».
+If Outlook adds the consultant's signature automatically, do not duplicate it: drop the signature block from the template and keep only « Bien cordialement, ». In Outlook Web the signature sits in a `#Signature` block: type the body **above** it, not inside it.

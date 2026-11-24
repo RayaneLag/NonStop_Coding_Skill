@@ -1,50 +1,52 @@
 # NonStop_Coding_Skill
 
-Skill Claude **NonstopCoding** : le coding de fin de journée du CRM NonStop Consulting, fait par Claude.
+Claude skill **NonstopCoding**: the end-of-day coding of the NonStop Consulting CRM, done by Claude.
 
-Chaque soir, Claude :
-1. identifie le consultant connecté au CRM et récupère **uniquement ses** appels du jour (jamais ceux des autres consultants) ;
-2. lit chaque transcript et comprend le contexte de l'appel ;
-3. recode la fiche candidat, contact client ou client selon le guide de coding NonStop (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment…) ;
-4. laisse une note structurée de l'appel sur la fiche ;
-5. sur un répondeur : note « Message vocal envoyé » et mail de suivi déposé dans les **brouillons Outlook** du consultant (jamais envoyé) ;
-6. rend un récapitulatif : fiches modifiées, brouillons à envoyer, points à vérifier, relances à prévoir.
+Every evening, Claude:
+1. identifies the consultant logged in to the CRM and fetches **only their** calls of the day (never other consultants' calls);
+2. reads each transcript and understands the context of the call;
+3. recodes the candidate, client contact or client record according to the NonStop coding guide (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment…);
+4. leaves a structured call note on the record;
+5. on a voicemail: note "Message vocal envoyé" and a follow-up email saved in the consultant's **Outlook drafts** (never sent);
+6. hands back a summary: records changed, drafts to send, points to check, follow-ups to plan.
 
-## Accès au CRM
+CRM notes and follow-up emails are written in French, because the CRM, the team and the candidates work in French.
 
-- **Claude in Chrome** : Claude travaille dans le Chrome du recruteur, déjà connecté au CRM.
-- **MCP du CRM NonStop** : utilisé en priorité dès qu'il est disponible dans Claude.
+## CRM access
 
-## Garde-fous
+- **Claude in Chrome**: Claude works in the recruiter's Chrome, already logged in to the CRM.
+- **NonStop CRM MCP**: used first whenever it is available in Claude.
 
-Même en mode autonome, Claude ne touche jamais aux appels d'un autre consultant, n'envoie aucun mail (brouillons seulement), ne supprime rien, ne fusionne pas de doublons, n'envoie aucun message, ne réattribue pas la fiche d'un collègue et ne touche pas au consentement RGPD sans accord explicite. Ces cas sont signalés dans le récapitulatif.
+## Guardrails
 
-## Contenu
+Even in autonomous mode, Claude never touches another consultant's calls, sends no email (drafts only), deletes nothing, does not merge duplicates, sends no message, does not reassign a colleague's record and does not change GDPR consent without explicit agreement. These cases are flagged in the summary.
+
+## Contents
 
 ```
 nonstopcoding/
-├── SKILL.md                     # workflow principal
+├── SKILL.md                     # main workflow
 └── references/
-    ├── guide-coding.md          # règles de coding (champs, valeurs, modèles, erreurs)
-    ├── modele-note.md           # modèle de note d'appel
-    ├── modele-mail.md           # mail de suivi après répondeur
-    └── acces-crm.md             # mode MCP, mode Chrome, brouillons Outlook
+    ├── coding-guide.md          # coding rules (fields, values, templates, mistakes)
+    ├── note-template.md         # call note template
+    ├── email-template.md        # follow-up email after a voicemail
+    └── crm-access.md            # MCP mode, Chrome mode, Outlook drafts
 ```
 
 ## Installation
 
-**Claude Code** : copier le dossier `nonstopcoding` dans `~/.claude/skills/`.
+**Claude Code**: copy the `nonstopcoding` folder into `~/.claude/skills/`.
 
-**Claude (app / claude.ai)** : zipper le dossier `nonstopcoding` et l'importer dans *Paramètres → Capacités → Skills*.
+**Claude (app / claude.ai)**: zip the `nonstopcoding` folder and import it in *Settings → Capabilities → Skills*.
 
-## Utilisation
+## Usage
 
-En fin de journée, écrire simplement :
+At the end of the day, simply type:
 
 ```
 start coding
 ```
 
-Claude traite tous les appels du jour du consultant connecté, sans autre question.
+Claude processes all of the logged-in consultant's calls of the day, with no further questions.
 
-**Pour laisser tourner après votre départ :** le PC ne doit pas passer en **veille**, sinon tout s'arrête (Claude, Chrome, réseau). Éteindre seulement l'écran ou verrouiller la session (Win + L) ne pose pas de problème. Pensez aussi à autoriser à l'avance le CRM et Outlook dans l'extension Claude in Chrome, pour qu'aucune demande d'autorisation ne bloque la session.
+**To let it run after you leave:** the PC must not go to **sleep**, otherwise everything stops (Claude, Chrome, network). Turning off the screen or locking the session (Win + L) is fine. Also allow the CRM and Outlook in the Claude in Chrome extension beforehand, so that no permission request blocks the session.
