@@ -17,7 +17,7 @@ Quand le consultant écrit **« start coding »**, il lance la session de coding
 - démarre tout de suite, sans poser de question de confirmation ni demander de date (par défaut : aujourd'hui) ;
 - enchaîne tous les appels jusqu'au bout sans attendre de réponse ; un appel qui pose problème est noté dans le récapitulatif, puis tu passes au suivant ;
 - ne t'arrête et n'attends le consultant que dans les cas où continuer serait risqué : consultant connecté impossible à identifier, page de connexion au CRM ou à Outlook ;
-- le récapitulatif final est la première chose qu'il lira le lendemain matin : il doit se suffire à lui-même.
+- dès que le dernier appel est traité, affiche **immédiatement** le récapitulatif final dans la conversation Claude Code (étape 6), sans attendre de message du consultant. Il doit se suffire à lui-même, car le consultant le lira peut-être plus tard.
 
 Avant de coder quoi que ce soit, lis [references/guide-coding.md](references/guide-coding.md) : c'est la règle du jeu (définition des champs, valeurs autorisées, modèles par profil, erreurs fréquentes). Le modèle de note est dans [references/modele-note.md](references/modele-note.md).
 
@@ -99,7 +99,7 @@ Pour chaque appel tombé sur un répondeur :
 
 ## Étape 6 — Récapitulatif final
 
-Quand tous les appels sont traités, rends un récapitulatif unique :
+Dès que tous les appels sont traités, écris tout de suite dans la conversation Claude Code un récapitulatif unique :
 
 ```
 ## Coding du <date> — Prénom NOM — <N> appels traités
