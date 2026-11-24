@@ -1,6 +1,6 @@
 ---
 name: nonstopcoding
-description: Fait le « coding » de fin de journée dans le CRM NonStop Consulting pour un recruteur. Passe en revue uniquement les appels du jour du consultant connecté, lit chaque transcript, comprend le contexte, puis recode la fiche candidat, contact client ou client (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment, etc.) selon le guide de coding NonStop et laisse une note structurée de l'appel ; pour un répondeur, laisse la note « Message vocal envoyé » et prépare un mail de suivi dans les brouillons Outlook. Utilise ce skill dès que l'utilisateur parle de coding CRM, de « coder mes appels », de mettre à jour ses fiches après ses calls, de sa fin de journée sur le CRM NonStop, de notes d'appel à saisir, ou de fiches « Person coding needed », même s'il ne cite pas le nom du skill.
+description: Déclencheur principal — dès que l'utilisateur écrit « start coding » (quelle que soit la casse, seul ou dans une phrase), lance immédiatement ce skill. Fait le « coding » de fin de journée dans le CRM NonStop Consulting pour un recruteur. Passe en revue uniquement les appels du jour du consultant connecté, lit chaque transcript, comprend le contexte, puis recode la fiche candidat, contact client ou client (Markets, Industries, Specialisms, Coded Skills, Seniority, Candidate status, Employment, etc.) selon le guide de coding NonStop et laisse une note structurée de l'appel ; pour un répondeur, laisse la note « Message vocal envoyé » et prépare un mail de suivi dans les brouillons Outlook. Utilise ce skill dès que l'utilisateur parle de coding CRM, de « coder mes appels », de mettre à jour ses fiches après ses calls, de sa fin de journée sur le CRM NonStop, de notes d'appel à saisir, ou de fiches « Person coding needed », même s'il ne cite pas le nom du skill.
 ---
 
 # NonstopCoding — coding de fin de journée du CRM NonStop
@@ -10,6 +10,14 @@ Le recruteur passe sa journée au téléphone. Le soir, chaque appel doit se tra
 2. une **note structurée** qui raconte ce qui s'est dit.
 
 Ton rôle : faire ce travail à sa place, **en autonomie**, de façon fiable, **uniquement sur ses propres appels**, puis lui rendre un récapitulatif clair.
+
+## Déclencheur : « start coding »
+
+Quand le consultant écrit **« start coding »**, il lance la session de coding et, le plus souvent, **quitte son poste** juste après. Conséquences :
+- démarre tout de suite, sans poser de question de confirmation ni demander de date (par défaut : aujourd'hui) ;
+- enchaîne tous les appels jusqu'au bout sans attendre de réponse ; un appel qui pose problème est noté dans le récapitulatif, puis tu passes au suivant ;
+- ne t'arrête et n'attends le consultant que dans les cas où continuer serait risqué : consultant connecté impossible à identifier, page de connexion au CRM ou à Outlook ;
+- le récapitulatif final est la première chose qu'il lira le lendemain matin : il doit se suffire à lui-même.
 
 Avant de coder quoi que ce soit, lis [references/guide-coding.md](references/guide-coding.md) : c'est la règle du jeu (définition des champs, valeurs autorisées, modèles par profil, erreurs fréquentes). Le modèle de note est dans [references/modele-note.md](references/modele-note.md).
 

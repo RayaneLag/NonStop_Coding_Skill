@@ -37,4 +37,14 @@ nonstopcoding/
 
 **Claude (app / claude.ai)** : zipper le dossier `nonstopcoding` et l'importer dans *Paramètres → Capacités → Skills*.
 
-Puis, en fin de journée : « Fais le coding de mes appels du jour ».
+## Utilisation
+
+En fin de journée, écrire simplement :
+
+```
+start coding
+```
+
+Claude traite tous les appels du jour du consultant connecté, sans autre question.
+
+**Pour laisser tourner après votre départ :** le PC ne doit pas passer en **veille**, sinon tout s'arrête (Claude, Chrome, réseau). Éteindre seulement l'écran ou verrouiller la session (Win + L) ne pose pas de problème. Pensez aussi à autoriser à l'avance le CRM et Outlook dans l'extension Claude in Chrome, pour qu'aucune demande d'autorisation ne bloque la session.
