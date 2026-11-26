@@ -70,6 +70,23 @@ Apply the guide. The points that make the difference:
 - **Seniority** derived from real experience (years, management), not from the title alone.
 - Also fill the "should be filled" fields when the call provides them: Target location, Contract type, Languages, Source, Specialisms.
 
+### Headhunt: No / Do not headhunt — check whether it really applies
+
+A client record with `Headhunt: No` (or a candidate the CRM switches to `Do not headhunt` on save because of their employer) is **not enough on its own**. Each time you meet it, open the employer's client record and check two fields (consultant's rule since 26/11/2026):
+
+- **Account manager(s)**: a colleague's name, empty, or a name marked `(left)`.
+- **Terms signed**: BD status `Terms signed` / `Account managed`, or `Terms agreed` ticked with a rate.
+
+Then:
+
+| Account manager | Terms | Result |
+|---|---|---|
+| Active colleague | Signed | **Strictly forbidden to approach.** Status stays `Do not headhunt`, no follow-up email draft, flag it in the summary. |
+| Empty, or only colleagues marked `(left)` | Any | **The Do not headhunt does not count** (the account manager has left the company). The candidate can be approached: keep the status that matches the call, prepare the follow-up draft as usual. If the CRM set `Do not headhunt` automatically on save, set the right status again explicitly and check it stuck. |
+| Active colleague | Not signed | Not covered by the rule: do not approach by default, keep the status, and flag it in the summary for the consultant to decide. |
+
+This only concerns candidates employed at a client. A **client contact** (Contact toggle / Client contact = Yes) stays `Do not headhunt` in every case. Never change the client's own `Headhunt` field or its terms.
+
 **Caution principle:** you complete and correct what the call or the CV clearly establishes. You do not overwrite plausible existing data with a guess. When in real doubt, leave the field as it is and flag it in the summary: an incomplete record is fixed in 10 seconds, a wrongly coded record pollutes the whole team's searches.
 
 ## Step 4 — Apply in the CRM
@@ -120,7 +137,9 @@ As soon as every call is processed, immediately write a single summary in the Cl
 - Skipped calls (other consultant or unknown consultant): <number>
 - Voicemails with no email on the record: …
 - Possible duplicates: …
-- Client employer with Headhunt: No (do not approach): …
+- Client employer with Headhunt: No — strictly forbidden (active account manager + terms signed): …
+- Client employer with Headhunt: No — not applied (account manager empty or left): …
+- Client employer with Headhunt: No — to decide (active account manager, no terms signed): …
 - Fields left empty for lack of information: …
 - Failed saves: …
 

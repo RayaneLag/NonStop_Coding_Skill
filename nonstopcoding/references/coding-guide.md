@@ -153,7 +153,7 @@ Created via **Create client** in the Clients module. The CRM shows potential dup
 | Account manager | No | Consultant who manages the account. |
 | Business developer | No | Consultant who develops the account (the recruiter, if it is their prospect). |
 | Hiring location | No (should be filled) | Country / region where it hires. |
-| Headhunt | No (should be filled) | Yes / No. **No** = its employees must not be approached. |
+| Headhunt | No (should be filled) | Yes / No. **No** = its employees must not be approached, **only if** an active colleague is Account manager **and** terms are signed. Account manager empty or marked `(left)` = the No does not count (see SKILL.md, "Headhunt: No / Do not headhunt"). |
 | Coded Skills | No | Skills of the profiles it hires (e.g. IndEng, FSE, AppEng, ElecEng, IVD…). |
 | Financial ID | No | SIREN/SIRET if known. |
 
@@ -177,7 +177,7 @@ Clues from a client call for Client status / BD status (the clients speak French
 - [ ] Seniority, Contract type, Languages, Target location
 - [ ] Candidate status consistent with the call
 - [ ] Phone with description, email, Source, LinkedIn URL
-- [ ] Employer checked in Clients (Headhunt: No = do not approach)
+- [ ] Employer checked in Clients (Headhunt: No → also check Account manager + terms signed: both filled = do not approach; account manager empty or left = the No does not count)
 - [ ] Note with subject + record in the recruiter's name
 
 ### Client
