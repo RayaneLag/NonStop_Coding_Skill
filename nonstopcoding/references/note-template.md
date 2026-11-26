@@ -1,6 +1,6 @@
 # Call note template
 
-One note per meaningful call, with a **subject** (the note's title field in the CRM) and a structured body. Telegraphic, factual style, **written in French** (the CRM and the team work in French), except the voicemail note, which is in English (see below). Use « non abordé » (not discussed) when a topic was not raised: never invent anything.
+One note per meaningful call, with a **subject** (the note's title field in the CRM) and a structured body. Telegraphic, factual style, **written in French** (the CRM and the team work in French), except the voicemail note, which is only `Voice mail sent` (see below). Use « non abordé » (not discussed) when a topic was not raised: never invent anything.
 
 The French labels below must be used as they are.
 
@@ -48,12 +48,13 @@ Label meanings: Interlocuteur = contact person; Besoins = needs; Situation recru
 
 Subject: `Voice mail sent`
 
+Body:
+
 ```
-Call on <date> at <time> – voicemail, message left.
-Follow-up email drafted in Outlook (<email address>).
+Voice mail sent
 ```
 
-The voicemail note (subject and body) is written **in English**, unlike the other notes. With no email on the record, replace the second line with `No email on the record – no follow-up email.`
+Nothing more: no date, no time, no email address, no mention of the Outlook draft or of a missing email. Same note for every voicemail or no-answer call. Anything worth reporting (no email on the record, Headhunt: No…) goes in the final summary, not in the note.
 
 ## Example (anonymised)
 

@@ -23,7 +23,7 @@ Before coding anything, read [references/coding-guide.md](references/coding-guid
 
 ## Language
 
-The CRM, the candidates and the consultant work in French. Write CRM notes and follow-up emails **in French**, using the French templates in the reference files exactly as given. Exception: the voicemail note (subject `Voice mail sent` and its body) is written in English. Write the final summary in the language the consultant uses with you. Field values (Markets, Skills, statuses…) are the CRM's English labels.
+The CRM, the candidates and the consultant work in French. Write CRM notes and follow-up emails **in French**, using the French templates in the reference files exactly as given. Exception: the voicemail note is just `Voice mail sent` (subject and body), nothing else. Write the final summary in the language the consultant uses with you. Field values (Markets, Skills, statuses…) are the CRM's English labels.
 
 ## Step 0 — Choose the CRM access mode
 
@@ -95,8 +95,8 @@ Add a **note with a subject** to the record, following [references/note-template
 
 For each call that went to voicemail:
 
-1. **Note on the record**, subject `Voice mail sent`, body in English: `Call on <date> at <time> – voicemail, message left. Follow-up email drafted in Outlook (<email address>).`
-2. **Get the contact's email** from their CRM record (prefer the `personal` address for a candidate, `work` for a client contact). If there is no address, do not look elsewhere: write `No email on the record – no follow-up email.` in the note and flag it in the summary.
+1. **Note on the record**: subject `Voice mail sent`, body `Voice mail sent`. Nothing more: no date, no time, no email address, no mention of the draft or of a missing email. This applies to every voicemail / no-answer call (consultant's rule since 26/11/2026).
+2. **Get the contact's email** from their CRM record (prefer the `personal` address for a candidate, `work` for a client contact). If there is no address, do not look elsewhere: no draft, and flag it in the summary only (the note stays `Voice mail sent`).
 3. **Write the follow-up email** using [references/email-template.md](references/email-template.md), personalised with what the record and previous notes say (job, reason for the call). Sign in the name of the logged-in consultant.
 4. **Put it in the consultant's Outlook Drafts — without sending it.** The consultant reviews and sends it themselves. Outlook access: an Outlook / Microsoft 365 MCP tool if one exists (draft creation), otherwise Outlook Web in Chrome ("New email", fill To / Subject / Body, then close the window so Outlook saves it to Drafts, or use "Save draft"). Details in [references/crm-access.md](references/crm-access.md). Never click "Send".
 5. Check that the draft appears in the Drafts folder with the right recipient: the draft list must show the email address, not just "[Draft]". In Outlook Web, the typed address only counts once it has been validated with Enter and turned into a recipient chip (see [references/crm-access.md](references/crm-access.md)).
