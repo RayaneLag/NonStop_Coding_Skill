@@ -65,7 +65,7 @@ Apply the guide. The points that make the difference:
 - **Markets = the job, Industries = the sector.** "Pharmaceutical" is never a Market; "Pharmacy" is reserved for pharmacists. For a client, Markets = the jobs it **hires for**.
 - **Several values** whenever they are genuinely relevant (every sector worked in goes into Industries).
 - **Coded Skills: 3 to 8, concrete, taken from the CRM list.** Never invent a code. If the skill you want is not in the list, pick the closest one or leave it out.
-- **Candidate status consistent with the call** (table in the guide). A client contact is always `Do not headhunt`.
+- **Candidate status consistent with the call** (table in the guide). A client contact is `Do not headhunt` only when their company has an active account manager **and** signed terms (see "Headhunt: No / Do not headhunt" below).
 - **Employment**: switch from `TBD` to `Live` or `Left` as soon as the call has confirmed the situation.
 - **Seniority** derived from real experience (years, management), not from the title alone.
 - Also fill the "should be filled" fields when the call provides them: Target location, Contract type, Languages, Source, Specialisms.
@@ -85,7 +85,7 @@ Then:
 | Empty, or only colleagues marked `(left)` | Any | **The Do not headhunt does not count** (the account manager has left the company). The candidate can be approached: keep the status that matches the call, prepare the follow-up draft as usual. If the CRM set `Do not headhunt` automatically on save, set the right status again explicitly and check it stuck. |
 | Active colleague | Not signed | Not covered by the rule: do not approach by default, keep the status, and flag it in the summary for the consultant to decide. |
 
-This only concerns candidates employed at a client. A **client contact** (Contact toggle / Client contact = Yes) stays `Do not headhunt` in every case. Never change the client's own `Headhunt` field or its terms.
+The same check applies to a **client contact** (Contact toggle on / Client contact = Yes): they stay `Do not headhunt` **only if** their company has an active account manager **and** signed terms. Otherwise (no account manager, account manager `(left)`, or no terms signed) the company is not an active client: treat the person as a normal candidate, with the status that matches the call. Do not switch the Contact toggle or the Client contact field off: flag it in the summary instead. Never change the client's own `Headhunt` field or its terms.
 
 **Caution principle:** you complete and correct what the call or the CV clearly establishes. You do not overwrite plausible existing data with a guess. When in real doubt, leave the field as it is and flag it in the summary: an incomplete record is fixed in 10 seconds, a wrongly coded record pollutes the whole team's searches.
 

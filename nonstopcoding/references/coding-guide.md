@@ -81,7 +81,7 @@ After creating or updating: add a **note with a subject** (call summary or CV so
 | Not looking / found own job | Found a job on their own. |
 | Not Relevant / Dead | Off-target profile or unreachable for good. |
 | Placed | Placed by NonStop. |
-| Do not headhunt | Client contact or person not to be approached. |
+| Do not headhunt | Person not to be approached: client contact or employee of a client whose company has an active account manager **and** signed terms. |
 
 Clues in a transcript (the candidates speak French):
 - « je cherche », « je suis en recherche active », « j'ai des entretiens ailleurs » (I'm looking, actively searching, interviewing elsewhere) → **Live Active**
@@ -121,7 +121,7 @@ A client contact is a Person record with the **Contact** toggle on and **Client 
 | Contact type (mandatory once Client contact is on) | HR - Recruiter/TA/MSP · HR - Associate · HR - Manager/Head of · Int Rec/RPO · Department - Line MGR/ Head of · Department - Associate · Department - Administrator · Manager · Plant Manager / Managing Director · Procurement. |
 | Hiring type | Perm and/or Contingent / Flexible workers. |
 | Hiring location | Areas where they hire (e.g. Hauts-de-France). |
-| Candidate status | **Do not headhunt**, and Contact methods set to "Do not headhunt". |
+| Candidate status | **Do not headhunt** (and Contact methods "Do not headhunt") **only if** the company has an active account manager **and** signed terms. Otherwise the company is not an active client: status that matches the call, like a normal candidate. |
 | Markets | Their own job (an HR person = Recruitment; a sales director = Sales & BD). |
 | Industries | The client's + their own (e.g. Diagnostics, Pharmaceutical, HR & Recruitment). |
 | Phone / email | Direct line (*Direct Line*) and work email (*work*). |
@@ -198,4 +198,5 @@ Clues from a client call for Client status / BD status (the clients speak French
 - Coding a client by its sector in Markets instead of the jobs it hires for.
 - Leaving Employment on *TBD* after a call that confirmed the current job.
 - Sales rep records with no Seniority, Specialisms or Skills: they come out badly in searches.
-- Leaving a client contact on *Live Active* instead of *Do not headhunt*.
+- Leaving a client contact of an active client (active account manager + signed terms) on *Live Active* instead of *Do not headhunt*.
+- Putting a client contact on *Do not headhunt* when their company has no active account manager or no signed terms.
