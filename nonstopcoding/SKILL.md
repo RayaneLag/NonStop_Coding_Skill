@@ -77,6 +77,12 @@ A client record with `Headhunt: No` (or a candidate the CRM switches to `Do not 
 - **Account manager(s)**: a colleague's name, empty, or a name marked `(left)`.
 - **Terms signed**: BD status `Terms signed` / `Account managed`, or `Terms agreed` ticked with a rate.
 
+Before that, three points:
+
+- The rule only applies to the **current** employer (`Employment = Live`). If the person has `Left` that company, its Headhunt does not apply to them.
+- A company having a record in the Clients module does **not** make it an active client (e.g. Groupe Axplora: record exists, no account manager, no terms).
+- Never rely on the `Do not headhunt` status or on `Headhunt: No` alone: the CRM sets `Do not headhunt` by itself on save without checking the account manager or the terms. To know whether an account manager has left, rely on the CRM's `(left)` mark.
+
 Then:
 
 | Account manager | Terms | Result |
